@@ -27,9 +27,11 @@ const HomePage = () => {
             {
                 postIds.map((id, idx)=><Post key={idx} id={id}/>)
             }
-            <button onClick={handlePrevPage} className='clickable'>Prev</button>
-            <p>page : {pageNumber}</p>
-            <button onClick={handleNextPage} className='clickable'>Next</button>
+            <div id="page-select">
+                <button onClick={handlePrevPage} className='clickable'>Prev</button>
+                <p id='page-num'>page : {pageNumber}</p>
+                <button onClick={handleNextPage} className='clickable'>Next</button>
+            </div>
         </>
     )
 }

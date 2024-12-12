@@ -12,9 +12,9 @@ function App() {
           <NavigationBar/>
           <div id='page'>
             <Routes>
-              <Route path='/' element={<HomePage/>}/>
-              <Route path='/post/:id' element = {<PostPage/>}/>
-              <Route path='/profile/:id' element = {<Profile/>}/>
+              <Route path='/social-media' element={<HomePage/>}/>
+              <Route path='/social-media/post/:id' element = {<PostPage/>}/>
+              <Route path='/social-media/profile/:id' element = {<Profile/>}/>
             </Routes>
           </div>
         </div>

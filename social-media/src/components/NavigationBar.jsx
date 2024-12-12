@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 const NavigationBar = () => {
     const navigate = useNavigate()
     const handleReturnToHome = (e) => {
-        navigate("/")
+        navigate("/social-media")
     }
     return(
         <>

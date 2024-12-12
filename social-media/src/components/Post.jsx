@@ -10,10 +10,10 @@ const Post = ({id}) => {
     },[id])
     const navigate = useNavigate()
     const handleGoToPost = (e) => {
-        navigate(`/post/${id}`)
+        navigate(`/social-media/post/${id}`)
     }
     return(        
-        <div onClick={handleGoToPost} className="post-el clickable">
+        <div onClick={handleGoToPost} className="post clickable">
             <h2>{post.title}</h2>
             <p>{post.body}</p>
         </div>

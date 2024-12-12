@@ -1,24 +1,109 @@
-#app {
-  margin: 5px;
-}
 #navbar {
   position: absolute;
-  top: 0%;
-  border: 3px solid black;
-  border-radius: 8px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  border-bottom: 3px solid black;
   padding-left: 5px;
   padding-right: 5px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
 }
 #page{
-  position: absolute;
-  top: 8%;
+  position: fixed;
+  top: 10%;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.post-el{
-  border-bottom: 5px solid black;
+.post{
+  border: 5px solid black;
+  margin: 1px;
+  margin-bottom: 20px;
+  padding-left: 1%;
+  background-color: lightblue;
+  border-radius: 12px;
+}
+.comment{
+  border: 5px solid black;
+  margin: 1px;
+  padding-left: 1%;
+  background-color: lightblue;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+#mpost{
+  border: 3px solid black;
+  margin: 5px;
+  padding-left: 2%;
+  border-radius: 30px;
+}
+#username{
+  margin: 12px;
+  padding: 5px;
+  border: 2px solid black;
+  width: min-content;
+  border-radius: 12px;
+  font-size: xx-large;
 }
 .clickable{
   cursor: pointer;
+}
+button{
+  width: 5%;
+  height: auto;
+}
+#page-select{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3%;
+  position: fixed;
+  bottom: 4%;
+  justify-content: center;
+  align-items: baseline;
+}
+#profile > * {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: lightblue;
+}
+#profile{
+  padding: 6px;
+}
+body{
+  background-color: lightcyan;
+}
+#page-num{
+  margin: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  body{
+    color: paleturquoise;
+    background-color: darkslateblue;
+  }
+  #navbar{
+    background-color: indigo;
+    border: 2px solid white
+  }
+  .post{
+    background-color: indigo;
+    border: 2px solid white
+  }
+  .comment{
+    background-color: indigo;
+    border: 2px solid white
+  }
+  #profile > * {
+    background-color: indigo;
+    border: 2px solid white;
+  }
+  #mpost{
+    border: 2px solid white;
+  }
+  #username{
+    border: 2px solid white;
+  }
 }

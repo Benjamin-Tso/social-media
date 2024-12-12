@@ -13,15 +13,19 @@ const Profile = () => {
     },[id])
     return(
         <>
-            <h1>Username: {user.username}</h1>
-            <h2>{user.name}</h2>
-            <h2>Living In {address.city}</h2>
-            <h2>Works At {company.name}</h2>
-            <h2>Contact Info: </h2>
-            <ul>
-                <li><h3>{user.email}</h3></li>
-                <li><h3>{user.phone}</h3></li>
-            </ul>
+            <div id="profile">
+                <h1 id="profile-uname">Username: {user.username}</h1>
+                <h2 id="profile-name">{user.name}</h2>
+                <h2 id="profile-city">Living In {address.city}</h2>
+                <h2 id="profile-company">Works At {company.name}</h2>
+                <div id="contact-info">
+                <h2>Contact Info: </h2>
+                    <ul>
+                        <li><h3>{user.email}</h3></li>
+                        <li><h3>{user.phone}</h3></li>
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }

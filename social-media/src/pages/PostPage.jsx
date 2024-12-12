@@ -21,18 +21,20 @@ const PostPage = () => {
         })()
     },[id])
     const handleGoToProfile = (e) => {
-        navigate(`/profile/${post.userId}`)
+        navigate(`/social-media/profile/${post.userId}`)
     }
     return (
         <>
-            <h2 onClick={handleGoToProfile} className="clickable">{user.username}</h2>
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
+            <h2 onClick={handleGoToProfile} className="clickable" id="username">{user.username}</h2>
+            <div id="mpost">
+                <h1>{post.title}</h1>
+                <p>{post.body}</p>
+            </div>
             <h2>Comments</h2>
             {
                 comments.map((comment, idx) => {
                     return (
-                        <div key={idx}>
+                        <div key={idx} className="comment">
                             <h2>{comment.name}</h2>
                             <p>{comment.body}</p>
                         </div>
