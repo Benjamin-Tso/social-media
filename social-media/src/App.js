@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
 import './App.css';
 import HomePage from './pages/HomePage';
 import PostPage from './pages/PostPage'
@@ -15,6 +15,7 @@ function App() {
               <Route path='/social-media' element={<HomePage/>}/>
               <Route path='/social-media/post/:id' element = {<PostPage/>}/>
               <Route path='/social-media/profile/:id' element = {<Profile/>}/>
+              <Route path='/' element={<Navigate to="/social-media"/>}/>
             </Routes>
           </div>
         </div>
